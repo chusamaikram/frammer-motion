@@ -1,11 +1,12 @@
 
 import './App.css'
+import CustomRoutes from './routes/Custom-routes'
 
 function App() {
 
   return (
     <>
-     <h1 className='text-center font-bold'> Movies Explorer</h1>
+      <CustomRoutes />
     </>
   )
 }
