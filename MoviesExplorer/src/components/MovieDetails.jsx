@@ -1,4 +1,4 @@
-
+import NoPreview from "../assets/no-preview.png";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "./Header";
@@ -32,8 +32,9 @@ export default function MovieDetails() {
 
                         <div className="md:w-1/3 flex justify-center">
                             <img
-                                src={movie.Poster}
+                                src={movie.Poster !== "N/A" ? movie.Poster : NoPreview}
                                 alt={movie.Title}
+                                loading="lazy"
                                 className="rounded-xl shadow-lg object-cover w-full"
                             />
                         </div>

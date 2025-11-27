@@ -70,7 +70,7 @@ export default function MoviesSection() {
                         />
                         <button
                             type="submit"
-                            className="flex items-center justify-center p-4 bg-blue-400 rounded-xl border-none text-base font-bold text-black"
+                            className="flex items-center cursor-pointer justify-center p-4 bg-blue-400 rounded-xl border-none text-base font-bold text-black"
                         >
                             Search here
                         </button>
