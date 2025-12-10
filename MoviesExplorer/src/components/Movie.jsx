@@ -16,7 +16,7 @@ export default function MoviesSection() {
     // Fetch Movies from API
     const FetchMovies = async (query) => {
         setLoading(true);
-        const res = await fetch(`http://www.omdbapi.com/?apikey=ec61a1a0&s=${query}`);
+        const res = await fetch(`https://www.omdbapi.com/?apikey=ec61a1a0&s=${query}`);
         const data = await res.json();
         setMovies(data.Search || []);
         setLoading(false);
