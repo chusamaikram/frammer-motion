@@ -9,10 +9,11 @@ export default function Button({
     variant = "default",
     disabled = false,
     onClick,
+    className
 }) {
     const baseClasses = `
     group bg-[#0160C9] text-white rounded-full text-sm font-semibold cursor-pointer
-    flex items-center justify-center
+    flex items-center justify-center ${className}
     ${disabled ? "opacity-50 pointer-events-none" : ""}
   `;
 
@@ -34,7 +35,7 @@ export default function Button({
         </>
     );
 
-    // 👉 External link
+    //  External link
     if (href) {
         return (
             <a
@@ -48,7 +49,7 @@ export default function Button({
         );
     }
 
-    // 👉 Internal navigation
+    //  Internal navigation
     if (to) {
         return (
             <Link to={to} className={`${baseClasses} ${spacing}`}>
@@ -57,7 +58,7 @@ export default function Button({
         );
     }
 
-    // 👉 Normal button
+    //  Normal button
     return (
         <button
             type={type}

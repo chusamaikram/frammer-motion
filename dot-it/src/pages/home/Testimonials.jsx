@@ -29,7 +29,7 @@
 //             <section className="py-8 sm:py-20 ">
 //                 <div className="container">
 //                     <h2 className="text-4xl leading-11 font-semibold text-center">Trusted by teams globally</h2>
-//                     <p className="mt-4 text-lg leading-7 text-center">From startups to enterprises, dot.it helps teams save time, reduce manual work, and close deals faster.</p>
+//                     <p className="mt-4 text-base sm:text-lg leading-7 text-center">From startups to enterprises, dot.it helps teams save time, reduce manual work, and close deals faster.</p>
 //                     <div className="mt-15 flex items-center">
 //                         {TestimonialCard.map((card, index) => (
 //                             <div key={index} className="mr-7.5 w-[375px] ">

@@ -1,11 +1,14 @@
 import ContactForm from "../../../components/common/ContactForm";
-import ContactThumbnail from "../../../assets/images/form-thumbnail.png"
+import ContactThumbnail from "../../../assets/images/form-thumbnail.webp"
 import MainHeading from "../../../components/common/MainHeading";
+import usePageTitle from "../../../hooks/usePageTitle";
 
 export default function ContactUs() {
+
+    usePageTitle("Contact Us | Dot it")
     return (
         <>
-            <section className="mt-[71px] py-20 bg-[#FAFAFA]">
+            <section className=" mt-[71px] py-10 md:py-20 bg-[#FAFAFA]">
                 <div className="container">
                     <MainHeading BeforeColoredtext="Let's connect and" coloredText="dot.it"
                         desc="Have questions? Your thoughts and feedback are important to us." />

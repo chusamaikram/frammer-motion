@@ -5,6 +5,7 @@ import MainHeading from "../../../components/common/MainHeading";
 import Searchbar from "../../../components/case studies/Searchbar";
 import Pagination from "../../../components/common/Pagination";
 import FilterButtons from "../../../components/case studies/FilterButtons";
+import usePageTitle from "../../../hooks/usePageTitle";
 const categories = [
     "All",
     "Finance",
@@ -19,6 +20,9 @@ const categories = [
 ];
 
 export default function CaseStudiesPage() {
+
+usePageTitle("Case Studies | Dot it")
+
     const [page, setPage] = useState(1);
 
     const [searchTerm, setSearchTerm] = useState("");

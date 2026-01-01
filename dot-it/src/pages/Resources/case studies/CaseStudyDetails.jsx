@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 
-import DetailBg from "/images/CaseStudies/case-study-detail-bg.png"
+
 import SocialShare from "./SocialShare";
 import CaseStudies from "../../../components/case studies/CaseStudies";
 
@@ -25,9 +25,9 @@ export default function CaseStudyDetail() {
     return (
         <>
             <section className=" mt-[71px]" >
-                <div className="relative h-auto lg:h-[450px]  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `URL(${caseStudy.thumbnail})` }}>
+                <div className="relative  h-[300px] md:h-[450px]  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `URL(${caseStudy.thumbnail})` }}>
                     <div className="absolute inset-0 bg-black/70"></div>
-                    <div className=" absolute left-20 bottom-20 flex flex-col items-start gap-3 justify-end">
+                    <div className=" absolute left-5 md:left-20 bottom-10 md:bottom-20 flex flex-col items-start gap-3 justify-end">
                         <div className="flex items-center gap-2">
                             <Link to="/" aria-label="home navigation">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,10 +38,10 @@ export default function CaseStudyDetail() {
                             <span className="text-[#A4A7AE]">/</span>
                             <Link className="text-sm font-medium leading-5 text-[#A4A7AE]" to="/case-studies">Case Studies</Link>
                             <span className="text-[#A4A7AE]">/</span>
-                            <span className="inline-block text-white max-w-[152px] overflow-hidden text-ellipsis whitespace-nowrap">{caseStudy.title}</span>
+                            <span className="inline-block text-sm md:text-base text-white max-w-[152px] overflow-hidden text-ellipsis whitespace-nowrap">{caseStudy.title}</span>
                         </div>
 
-                        <h1 className="text-3xl md:text-5xl font-medium leading-8 md:leading-15 text-white max-w-[808px] text-start "> {caseStudy.title}</h1>
+                        <h1 className="text-2xl md:text-5xl font-medium leading-8 md:leading-15 text-white max-w-[808px] text-start "> {caseStudy.title}</h1>
                     </div>
                 </div>
 
@@ -49,7 +49,7 @@ export default function CaseStudyDetail() {
 
 
             </section>
-            <section className="py-20 ">
+            <section className="py-10 md:py-20 ">
                 <div className="container">
                     <div className="flex flex-col items-start gap-9.5 ">
                         <div>
@@ -101,7 +101,7 @@ export default function CaseStudyDetail() {
             </section>
             <section className="py-20">
                 <div className="container">
-                    <h2 className="text-4xl mb-10 leading-11 font-semibold text-center">Read More Case Studies</h2>
+                    <h2 className="text-3xl sm:text-4xl mb-6 sm:mb-10 leading-11 font-semibold text-center">Read More Case Studies</h2>
                     <CaseStudies limit="4" />
                 </div>
             </section>

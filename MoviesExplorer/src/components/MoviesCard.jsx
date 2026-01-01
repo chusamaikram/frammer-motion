@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NoPreview from "../assets/no-preview.png";
+import NoPreview from "../assets/no-preview.webp";
 
 export default function MoviesCard({ movie }) {
     return (

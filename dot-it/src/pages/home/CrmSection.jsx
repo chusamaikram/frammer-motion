@@ -42,8 +42,8 @@ export default function CrmSection() {
         <>
             <section className="py-20  ">
                 <div className="container">
-                    <h2 className="text-center text-[36px] leading-11 font-semibold">Maximize the value of your CRM</h2>
-                    <p className="mt-4 text-center text-lg leading-7">Works seamlessly with your current tools</p>
+                    <h2 className="text-center text-3xl sm:text-4xl leading-11 font-semibold">Maximize the value of your CRM</h2>
+                    <p className="mt-4 text-center text-base sm:text-base sm:text-lg leading-7">Works seamlessly with your current tools</p>
                     <div className="mt-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5  gap-5.5">
                         {Companies.map((card, index) => (
                             <div key={index} className="flex flex-col items-center gap-6 ">

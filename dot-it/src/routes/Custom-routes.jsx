@@ -10,6 +10,8 @@ import CaseStudyDetail from "../pages/Resources/case studies/CaseStudyDetails";
 import Blogspage from "../pages/Resources/Blogs";
 import BlogsDetailPage from "../pages/Resources/Blogs/BlogsDetailPage";
 import Careers from "../pages/career";
+import TermsConditions from "../pages/terms-&-conditions";
+import PrivaceyPolicey from "../pages/privacy-policy/indec";
 
 
 export default function CustomRoutes() {
@@ -27,6 +29,8 @@ export default function CustomRoutes() {
                 <Route path="/blogs" element={<Blogspage />} />
                 <Route path="/blogs/:slug" element={<BlogsDetailPage />} />
                 <Route path="/careers" element={<Careers />} />
+                <Route path="/terms-of-services" element={<TermsConditions />} />
+                <Route path="/privacy-policey" element={<PrivaceyPolicey />} />
             </Routes>
         </>
     )

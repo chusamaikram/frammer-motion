@@ -4,9 +4,9 @@ import { contactSchema } from "../ContactSchema";
 export default function ContactForm({ heading, desc, img }) {
     return (
         <>
-            <section className="py-20">
+            <section className="py-10 md:py-20">
                 <div className="container">
-                    <div className="grid grid-cols-[minmax(100px,698px)_minmax(100px,582px)] items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-[minmax(100px,698px)_minmax(100px,582px)] gap-y-10 items-center">
                         <div className="flex flex-col items-start px-10">
                             <h2 className="text-[30px] font-semibold leading-9.5 ">{heading} </h2>
                             <p className="text-[#777B8B] text-base font-medium leading-6 mt-2">{desc}</p>

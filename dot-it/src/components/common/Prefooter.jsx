@@ -6,7 +6,7 @@ export default function PreFooter() {
             <section className="py-8 sm:py-10 bg-[#E6EFFA]">
                 <div className="container">
                     <div className="flex flex-col items-center gap-4">
-                        <h2 className="font-semibold text-4xl leading-11 text-[#252B37] ">dot your i's and cross your t's</h2>
+                        <h2 className="font-semibold text-3xl sm:text-4xl leading-11 text-center text-[#252B37] ">dot your i's and cross your t's</h2>
                         <div className="flex items-center gap-2">
                             <svg width="78" height="14" viewBox="0 0 78 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.99873 1.01953C7.18015 1.01953 7.34278 1.13154 7.40747 1.30107L8.78297 4.9059L12.5617 5.09069C12.7398 5.0994 12.8947 5.21523 12.9535 5.38351C13.0122 5.5518 12.963 5.73888 12.829 5.85647L9.9532 8.38091L11.0101 12.4299C11.0563 12.6066 10.9877 12.7934 10.8383 12.8984C10.6888 13.0034 10.4899 13.0045 10.3392 12.901L6.99873 10.6081L3.65819 12.901C3.50759 13.0045 3.30862 13.0034 3.15914 12.8984C3.00966 12.7934 2.94114 12.6066 2.98728 12.4299L4.04425 8.38091L1.16843 5.85647C1.03448 5.73888 0.985253 5.5518 1.04398 5.38351C1.10271 5.21523 1.25765 5.0994 1.43568 5.09069L5.21447 4.9059L6.58993 1.30107C6.65462 1.13154 6.81726 1.01953 6.99873 1.01953Z" fill="#FBBF24" />

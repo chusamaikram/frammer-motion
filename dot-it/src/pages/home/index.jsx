@@ -1,7 +1,7 @@
 import Button from "../../components/common/Button";
 import home_video from '../../assets/videos/home-video.mp4';
 import { Keysha, Medc, BlueEvening, FiveOak, Zapta } from '../../assets/svgs';
-import HeroBg from '../../assets/images/hero-bg.png'
+import HeroBg from '../../assets/images/hero-bg.webp'
 import TabsSection from "./WorkflowTabs";
 import Accordian from "../../components/Accordians";
 import CrmSection from "./CrmSection";
@@ -28,7 +28,7 @@ export default function HomePage() {
     ]
     return (
         <>
-            <section className=" pt-40 pb-20 bg-cover bg-center" style={{ backgroundImage: `url(${HeroBg})` }}>
+            <section className=" pt-20 md:pt-40 pb-8 sm:pb-20 bg-cover bg-center" style={{ backgroundImage: `url(${HeroBg})` }}>
                 <div className="container">
                     <div className="flex flex-col items-center justify-center gap-3 ">
                         <div className="bg-[#F6F4F1] rounded-full py-1 px-2.5 flex items-center gap-2">
@@ -37,8 +37,8 @@ export default function HomePage() {
                             </svg>
                             <p className='text-sm text-[#191D4D] font-medium '>AI Powered Sales Management</p>
                         </div>
-                        <h1 className="max-w-218 text-[48px] leading-15 text-[#011A35] font-semibold text-center tracking-[-0.5px]">Manage your entire    sales journey without ever leaving your inbox</h1>
-                        <p className="max-w-218 text-[#012246] text-base font-normal text-center">dot.it connects your touchpoints emails, meetings, calls, and CRM activity-into one streamlined flow. Our AI handles the busywork by logging updates, automating follow ups, surfacing valuable insights, and providing next steps alongside actionable intelligence. No more lost deals to messy processes just faster cycles and stronger closes.</p>
+                        <h1 className="max-w-218 text-4xl sm:text-[48px] leading-12 sm:leading-15 text-[#011A35] font-semibold text-start md:text-center tracking-[-0.5px]">Manage your entire    sales journey without ever leaving your inbox</h1>
+                        <p className="max-w-218 text-[#012246] text-base font-normal text-start md:text-center">dot.it connects your touchpoints emails, meetings, calls, and CRM activity-into one streamlined flow. Our AI handles the busywork by logging updates, automating follow ups, surfacing valuable insights, and providing next steps alongside actionable intelligence. No more lost deals to messy processes just faster cycles and stronger closes.</p>
                         <div className="mt-3 flex flex-col items-center justify-center gap-4.5">
                             <div className="flex items-center gap-2">
                                 <svg width="78" height="14" viewBox="0 0 78 14" fill="none" xmlns="http://www.w3.org/2000/svg">

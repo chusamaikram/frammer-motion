@@ -1,4 +1,4 @@
-import NoPreview from "../assets/no-preview.png";
+import NoPreview from "../assets/no-preview.webp";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "./Header";

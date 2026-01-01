@@ -1,9 +1,13 @@
-import whydotbg from "../../assets/images/why-dot-bg.png"
+import whydotbg from "../../assets/images/why-dot-bg.webp"
+import MainHeading from "../../components/common/MainHeading"
 import PreFooter from "../../components/common/Prefooter"
 import InvertedText from "../../components/Inverted-text"
+import usePageTitle from "../../hooks/usePageTitle"
 import UseCaseSection from "./UseCase-section"
 import WhyTeamsLove from "./Why-teams-love"
 export default function WhyDotPage() {
+
+    usePageTitle("Why Dot It | Dot it")
 
     const Listing = ["Manual email sorting and prioritization",
         "Repetitive CRM data entry and updates",
@@ -12,20 +16,23 @@ export default function WhyDotPage() {
     ]
     return (
         <>
-            <section className="mt-[71px] py-20  bg-[#FAFAFA] ">
+            <section className="mt-[71px] py-10 sm:py-20  bg-[#FAFAFA] ">
                 <div className="container">
-                    <div className="flex flex-col gap-3 items-center justify-center ">
-                        <h1 className="text-5xl leading-15 font-semibold max-w-[560px] text-center">The most <span className="text-[#0160C9]">intuitive</span> AI engagement platform</h1>
-                        <p className="max-w-[560px] text-center text-base leading-6 text-[#012246]">Discover how dot.it transforms sales engagement for modern teams with intelligent automation and seamless workflows.
-                        </p>
-                    </div>
+                    <MainHeading
+                        headingStyle="max-w-[560px] text-center"
+                        descStyle="max-w-[560px] text-center"
+                        BeforeColoredtext="The most"
+                        coloredText="intuitive"
+                        AfterColoredtext="AI engagement platform"
+                        desc="Discover how dot.it transforms sales engagement for modern teams with intelligent automation and seamless workflows."
+                    />
 
                 </div>
             </section>
 
             <section className="py-20">
                 <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-[420px_1fr] items-start gap-15">
+                    <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] items-start gap-15">
                         <div className="flex flex-col items-start gap-6">
                             <h2 className="text-4xl leading-11 font-semibold ">Stop <span className="text-[#0160C9]"> wasting</span> time on tedious tasks</h2>
                             <p className="text-lg">Teams spend hours every week digging through and updating the CRM along with other tools, and chasing tasks that AI could handle.</p>

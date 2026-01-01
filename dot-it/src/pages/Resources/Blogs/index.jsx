@@ -1,12 +1,13 @@
 import Searchbar from "../../../components/case studies/Searchbar";
 import MainHeading from "../../../components/common/MainHeading";
-import Blogs from "../../../assets/images/blogs.png";
-import blog2 from "../../../assets/images/blog2.png";
+import Blogs from "../../../assets/images/blogs.webp";
+import blog2 from "../../../assets/images/blog2.webp";
 import { Link } from "react-router-dom"
 import Pagination from "../../../components/common/Pagination";
 import { useEffect, useState } from "react";
 import FilterButtons from "../../../components/case studies/FilterButtons";
 import BlogsPage from "../../../components/blogs/Blogs";
+import usePageTitle from "../../../hooks/usePageTitle";
 
 
 const Filters = [
@@ -21,6 +22,8 @@ const Filters = [
     "Data"
 ]
 export default function Blogspage() {
+        usePageTitle("Blogs | Dot it")
+
     const [page, setPage] = useState(1);
     const [search, setSearch] = useState("");
     const [activeCategory, setActiveCategory] = useState("All");
@@ -59,7 +62,7 @@ export default function Blogspage() {
                         <h2 className="text-2xl sm:text-4xl leading-7 sm:leading-11 font-semibold">Featured Articles</h2>
                         <Searchbar placeholder="Search for news or articles" />
                     </div>
-                    <div className="mt-6 grid grid-cols-[minmax(100px,592px)_minmax(100px,664px)] gap-6">
+                    <div className="mt-6 grid grid-cols-1 md:grid-cols-[minmax(100px,592px)_minmax(100px,664px)] gap-6">
                         <Link className="w-full" to="">
                             <div className="h-[460px] p-3 group rounded-xl border border-[#EDEDED] transition-all duration-400 hover:shadow-[0_0_3px_6px_#EAF4FF] hover:border-[#0160C9] flex flex-col items-center gap-4">
                                 <div className="w-full overflow-hidden rounded-lg">

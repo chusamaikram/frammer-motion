@@ -34,7 +34,7 @@ export default function Footer() {
                 },
                 {
                     name: "FAQ",
-                    path: "/faq",
+                    path: "/careers#faq",
                 },
             ]
         },
@@ -47,7 +47,7 @@ export default function Footer() {
                 },
                 {
                     name: "Privacey Policy",
-                    path: "/privacey-policey"
+                    path: "/privacy-policey"
                 },
                 {
                     name: "Terms of Services",
@@ -98,11 +98,11 @@ export default function Footer() {
                                     {section.links.map((link, index) => (
                                         <li key={index}>
                                             {section.title === "Support & Sales" ? (
-                                                <a className='text-base leading-6 text-[#131313]' href={link.path} target='_blank'>{link.name}</a>
+                                                <a className='text-base leading-6 text-[#131313] ' href={link.path} target='_blank'>{link.name}</a>
 
                                             ) : (
 
-                                                <Link className='text-base leading-6 text-[#131313]' to={link.path}>{link.name}</Link>
+                                                <Link className='text-base leading-6 text-[#131313] ' to={link.path}>{link.name}</Link>
                                             )}
                                         </li>
                                     ))}

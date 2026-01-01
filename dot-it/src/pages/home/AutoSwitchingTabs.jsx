@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import TabsData from "../../components/TabsData";
-import RevenueTeams from "../../assets/images/revenue-teams.png"
-import CustomerSuccess from "../../assets/images/customer-success.png"
-import Leadership from "../../assets/images/leadership.png"
-import Operations from "../../assets/images/operations.png"
+import RevenueTeams from "../../assets/images/revenue-teams.webp"
+import CustomerSuccess from "../../assets/images/customer-success.webp"
+import Leadership from "../../assets/images/leadership.webp"
+import Operations from "../../assets/images/operations.webp"
 
 export default function AutoSwitchingTabs() {
 
@@ -25,14 +25,18 @@ export default function AutoSwitchingTabs() {
         <>
             <section className="py-8 sm:py-20 bg-[#E6EFFA]">
                 <div className="container">
-                    <ul className="w-fit mx-auto bg-[#F9FAFB] rounded-full border border-[#F2F4F7] flex items-center justify-center gap-2 p-2">
-                        {TabsButton.map((btn, index) => (
-                            <li key={index} className={`py-2 px-3 rounded-full flex items-center justify-center text-base font-semibold leading-6  ${active === index ? "text-[#012246]  bg-white" : "text-[#667085]"} `}>
-                                <button className=" cursor-pointer "
-                                    onClick={() => setActive(index)}>{btn}</button>
-                            </li>
-                        ))}
-                    </ul>
+                    <div className="overflow-x-auto ">
+                        <div className="w-fit min-w-max mx-auto bg-[#F9FAFB] rounded-full border border-[#F2F4F7]  p-2">
+                            <ul className="flex items-center justify-center gap-2 ">
+                                {TabsButton.map((btn, index) => (
+                                    <li key={index} className={`py-2 px-3 rounded-full flex items-center justify-center text-base font-semibold leading-6  ${active === index ? "text-[#012246]  bg-white" : "text-[#667085]"} `}>
+                                        <button className=" cursor-pointer "
+                                            onClick={() => setActive(index)}>{btn}</button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                     {active === 0 && (
                         <TabsData
                             heading="Revenue Teams"

@@ -21,7 +21,7 @@ export default function BlogsDetailPage() {
     if (!blog) return null;
     return (
         <>
-            <section className="mt-[71px] py-24">
+            <section className="mt-[71px] py-10 md:py-24">
                 <div className="container">
                     <div className="flex flex-col items-center justify-center gap-3">
                         <div className="flex items-center gap-2">
@@ -34,13 +34,13 @@ export default function BlogsDetailPage() {
                             <span className="text-[#535862]">/</span>
                             <Link className="text-sm font-medium leading-5 text-[#535862]" to="/blogs">blogs</Link>
                             <span className="text-[#535862]">/</span>
-                            <span className="inline-block text-[#535862] max-w-[152px] overflow-hidden text-ellipsis whitespace-nowrap">{blog.title}</span>
+                            <span className="inline-block text-sm md:text-base text-[#535862] max-w-[152px] overflow-hidden text-ellipsis whitespace-nowrap">{blog.title}</span>
                         </div>
-                        <h1 className="max-w-[768px] text-center text-[48px] font-semibold leading-15 text-[#181D27] ">{blog.title}</h1>
+                        <h1 className="max-w-[768px] text-center text-4xl md:text-[48px] font-semibold leading-15 text-[#181D27] ">{blog.title}</h1>
 
                     </div>
-                    <div className="px-8">
-                        <div className="blog-detail relative rounded-lg mt-16 px-8 max-w-[1216px] w-full bg-center bg-no-repeat bg-cover overflow-hidden h-[540px]" style={{
+                    <div className="md:px-8">
+                        <div className="blog-detail relative rounded-lg mt-8 md:mt-16 px-8 max-w-[1216px] w-full bg-center bg-no-repeat bg-cover overflow-hidden h-[300px] md:h-[540px]" style={{
                             backgroundImage: `url(${blog.thumbnail})`,
                         }}></div>
                     </div>
@@ -99,7 +99,7 @@ export default function BlogsDetailPage() {
             </section>
             <section className="py-20">
                 <div className="container">
-                    <h2 className="text-4xl mb-10 leading-11 font-semibold text-center">Read More Blogs</h2>
+                    <h2 className="text-3xl sm:text-4xl mb-6 md:sm-10 leading-11 font-semibold text-center">Read More Blogs</h2>
                     <BlogsPage limit="3" />
                 </div>
             </section>

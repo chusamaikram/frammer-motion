@@ -1,16 +1,22 @@
 
-import FormThumbnail from "../../../assets/images/form-thumbnail.png"
+import FormThumbnail from "../../../assets/images/form-thumbnail.webp"
 import ContactForm from "../../../components/common/ContactForm"
+import MainHeading from "../../../components/common/MainHeading"
+import usePageTitle from "../../../hooks/usePageTitle"
 
 export default function RequestDemo() {
+
+    usePageTitle("Request a Demo | Dot it")
     return (
         <>
             <section className="bg-[#FAFAFA] mt-[71px] py-20">
                 <div className="container">
-                    <div className="flex flex-col items-center justify-center gap-3">
-                        <h1 className="text-[48px] font-semibold leading-15 text-[#011A35] ">See <span className="text-[#0160C9]">dot.it</span> in action</h1>
-                        <p className="text-base leading-6">Ready to experience how dot.it transforms your inbox into your smartest sales tool?</p>
-                    </div>
+                    <MainHeading
+                        BeforeColoredtext="See"
+                        coloredText="dot.it"
+                        AfterColoredtext="in action"
+                        desc="Ready to experience how dot.it transforms your inbox into your smartest sales tool?"
+                    />
                 </div>
             </section>
             <ContactForm heading="Book your demo "

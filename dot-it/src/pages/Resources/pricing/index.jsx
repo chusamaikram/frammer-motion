@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import TestimonialSection from "../../home/Testimonials";
 import PreFooter from "../../../components/common/Prefooter";
+import MainHeading from "../../../components/common/MainHeading";
+import usePageTitle from "../../../hooks/usePageTitle";
 
 export default function PricePage() {
+
+    usePageTitle("Pricing | Dot it")
 
     const pricingCard = [
         {
@@ -31,10 +35,14 @@ export default function PricePage() {
         <>
             <section className="mt-[71px] py-20 bg-[#FAFAFA]">
                 <div className="container">
-                    <div className="flex flex-col items-center justify-center gap-3 ">
-                        <h1 className="text-5xl leading-15 font-semibold text-[#011A35]">Choosing the <span className="text-[#0160C9]">right</span> plan</h1>
-                        <p className="text-center text-[#012246] max-w-[560px]">Choose a plan that fits your needs and budget, and let's embark on this journey of success together.</p>
-                    </div>
+                    <MainHeading
+                        BeforeColoredtext="Choosing the"
+                        coloredText="right"
+                        AfterColoredtext="plan"
+                        descStyle="max-w-[560px] text-center"
+                        desc="Choose a plan that fits your needs and budget, and let's embark on this journey of success together"
+                    />
+
                 </div>
             </section>
             <section className="py-20">

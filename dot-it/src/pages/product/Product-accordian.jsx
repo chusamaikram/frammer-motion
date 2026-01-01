@@ -1,4 +1,4 @@
-import accordianbg from "../../assets/images/accordian-bg.png"
+import accordianbg from "../../assets/images/accordian-bg.webp"
 import { useState } from "react";
 
 const AccordionSection = ({ Accordians }) => {
@@ -10,7 +10,7 @@ const AccordionSection = ({ Accordians }) => {
 
             <div className='bg-[#e6e9ed24] p-7.5 rounded-2xl flex flex-col items-start gap-6'>
                 {Accordians.map((accordian, index) => (
-                    <div key={index} className={`w-full max-w-[592px] py-3 px-5 rounded-3xl border cursor-pointer ${activeIndex === index ? "bg-[#F3F8FF] border-[#D9E7F7]" : "border-[#E9EAEB]"}  `}>
+                    <div key={index} className={`w-full sm:max-w-[592px] py-3 px-5 rounded-3xl border cursor-pointer ${activeIndex === index ? "bg-[#F3F8FF] border-[#D9E7F7]" : "border-[#E9EAEB]"}  `}>
                         <button onClick={() => setActiveIndex(index)} className='w-full text-start cursor-pointer text-xl leading-7.5 font-medium flex items-center gap-3'>
                             {accordian.icon}
 

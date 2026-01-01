@@ -26,17 +26,19 @@ export default function TabsSection() {
             <section className="py-20">
                 <div className="container">
                     <div className="flex flex-col items-center gap-15 px-7.5">
-                        <h2 className="text-[36px] leading-11 font-semibold text-center">AI that works where you work</h2>
-                        <ul className="p-2 rounded-full bg-[#F9FAFB] border border-[#F2F4F7] flex items-center justify-center gap-2">
-                            {Tabs.map(tab => (
-                                <li key={tab.id} >
-                                    <button onClick={() => setActive(tab.id)} className={`py-2 px-[52.5px] text-base font-semibold  leading-6 cursor-pointer ${tab.id === active ? "bg-white rounded-full text-[#012246]" : "text-[#667085]"}`}>{tab.name}</button>
-                                </li>
+                        <h2 className="text-3xl sm:text-[36px] leading-11 font-semibold text-center">AI that works where you work</h2>
+                        <div className="w-full overflow-x-auto">
+                            <ul className="w-fit mx-auto min-w-max p-2 rounded-full bg-[#F9FAFB] border border-[#F2F4F7] flex items-center justify-center gap-2">
+                                {Tabs.map(tab => (
+                                    <li key={tab.id} >
+                                        <button onClick={() => setActive(tab.id)} className={`py-2 px-[52.5px] text-base font-semibold  leading-6 cursor-pointer ${tab.id === active ? "bg-white rounded-full text-[#012246]" : "text-[#667085]"}`}>{tab.name}</button>
+                                    </li>
 
-                            ))}
+                                ))}
 
 
-                        </ul>
+                            </ul>
+                        </div>
                         <div>
                             {active === 1 && (<HomeTabs
                                 highlight='Automate'

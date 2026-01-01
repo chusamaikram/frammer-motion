@@ -1,13 +1,13 @@
 import { useState } from "react"
-import telecommunication from "../../assets/images/telecommunication.png"
-import finance from "../../assets/images/finance.png"
-import automotive from "../../assets/images/automotive.png"
-import marketResearch from "../../assets/images/market-research.png"
-import construction from "../../assets/images/construction.png"
-import legal from "../../assets/images/legal.png"
-import aviation from "../../assets/images/aviation.png"
-import consulting from "../../assets/images/consulting.png"
-import crm from "../../assets/images/crm.png"
+import telecommunication from "../../assets/images/telecommunication.webp"
+import finance from "../../assets/images/finance.webp"
+import automotive from "../../assets/images/automotive.webp"
+import marketResearch from "../../assets/images/market-research.webp"
+import construction from "../../assets/images/construction.webp"
+import legal from "../../assets/images/legal.webp"
+import aviation from "../../assets/images/aviation.webp"
+import consulting from "../../assets/images/consulting.webp"
+import crm from "../../assets/images/crm.webp"
 import { Link } from "react-router-dom"
 export default function UseCaseSection() {
 
@@ -61,9 +61,9 @@ export default function UseCaseSection() {
         },
     ]
     return (
-        <section className="py-20">
+        <section className=" py-10 sm:py-20">
             <div className="container">
-                <div className="grid grid-cols-2 gap-15">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-15">
                     <div className="flex flex-col l text-white bg-cover bg-center rounded-lg p-5  sm:p-10 justify-end h-full min-h-[300px] sm:h-[629px] transition-all duration-500" style={{ backgroundImage: `URL(${Data[active].img})` }}>
                         <h3 className=" text-4xl leading-11 font-semibold">Built for Every Industry</h3>
                         <p className="font-normal text-base sm:text-lg leading-6 sm:leading-7 tracking-[-0.02em] pt-4 sm:max-w-[540px]">Start with dot.it and watch every email become an opportunity and every lead a seamless sale. Embrace the future of sales management.</p>
