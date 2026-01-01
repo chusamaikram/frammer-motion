@@ -60,7 +60,7 @@ const CaseStudies = ({ activeCategory = "All", searchTerm = "", limit = "8" }) =
                             <Link to={`/case-studies/${card.slug}`} className="mt-1 flex items-center gap-1 text-sm font-semibold leading-5 text-[#0160C9]">
                                 Read more
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#0160C9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#0160C9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </Link>
                         </div>

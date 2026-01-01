@@ -16,7 +16,7 @@
 //                     }`}
 //             >
 //                 <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-//                     <path d="M15.8346 10.0013H4.16797M4.16797 10.0013L10.0013 15.8346M4.16797 10.0013L10.0013 4.16797" stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+//                     <path d="M15.8346 10.0013H4.16797M4.16797 10.0013L10.0013 15.8346M4.16797 10.0013L10.0013 4.16797" stroke="#344054" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
 //                 </svg>
 //                 </span>
 //                 Previous
@@ -55,7 +55,7 @@
 //             >
 //                 Next
 //                 <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-//                     <path d="M4.16797 10.0013H15.8346M15.8346 10.0013L10.0013 4.16797M15.8346 10.0013L10.0013 15.8346" stroke="#344054" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+//                     <path d="M4.16797 10.0013H15.8346M15.8346 10.0013L10.0013 4.16797M15.8346 10.0013L10.0013 15.8346" stroke="#344054" strokeWidth="1.66667" strokeLinecap="round" strokeLinejoin="round" />
 //                 </svg>
 //                 </span>
 //             </button>

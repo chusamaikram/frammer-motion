@@ -78,7 +78,7 @@ export default function Blogspage() {
                                         <div className="flex items-start justify-between gap-4">
                                             <h3 className="text-lg font-medium leading-7 text-[#101828] group-hover:text-[#0160C9] ">The Transformative Power of Artificial Intelligence in Today’s World</h3>
                                             <svg className="stroke-[#181D27] group-hover:stroke-[#0160C9]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
 
                                         </div>
@@ -109,7 +109,7 @@ export default function Blogspage() {
                                                 <h3 className="text-lg font-medium leading-7 text-[#101828] group-hover:text-[#0160C9] line-clamp-2">The Transformative Power of Artificial Intelligence in Today’s World </h3>
                                                 <span>
                                                     <svg className="stroke-[#181D27] group-hover:stroke-[#0160C9]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7 17L17 7M17 7H7M17 7V17" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                     </svg>
                                                 </span>
 
@@ -138,7 +138,7 @@ export default function Blogspage() {
                                                 <h3 className="text-lg font-medium leading-7 text-[#101828] group-hover:text-[#0160C9] line-clamp-2">The Transformative Power of Artificial Intelligence in Today’s World </h3>
                                                 <span>
                                                     <svg className="stroke-[#181D27] group-hover:stroke-[#0160C9]" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M7 17L17 7M17 7H7M17 7V17" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                     </svg>
                                                 </span>
 

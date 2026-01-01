@@ -130,7 +130,7 @@ export default function TestimonialSection() {
                         centeredSlides
                         spaceBetween={30}
                         loop
-                        loopedSlides={testimonials.length}
+                        loopedslides={testimonials.length}
                         speed={800}
                         autoplay={{
                             delay: 3500,

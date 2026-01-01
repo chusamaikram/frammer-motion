@@ -67,7 +67,7 @@ export default function PricePage() {
                                             <li key={index} className="flex items-center gap-2 text-lg text-[#575757] leading-7">
                                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <rect width="28" height="28" rx="14" fill="#FAFAFA" />
-                                                    <path d="M9.33203 14.0013L12.6654 17.3346L19.332 10.668" stroke="#100F11" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9.33203 14.0013L12.6654 17.3346L19.332 10.668" stroke="#100F11" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                                 {list}
                                             </li>

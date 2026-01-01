@@ -53,7 +53,7 @@ const BlogsPage = ({ activeCategory = "All", searchTerm = "", limit = "6" }) => 
                             <div className="flex items-center justify-between gap-4 w-full">
                                 <h3 className="text-lg font-medium leading-7 text-[#101828] line-clamp-2">{card.title}</h3>
                                 <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#181D27" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#181D27" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 </span>
                             </div>

@@ -128,7 +128,7 @@ export default function ProductPage() {
                     <h2 className="text-3xl sm:text-4xl font-semibold leading-11 text-center">Where sales management meets simplicity</h2>
                     <div className="relative max-w-[797px] w-full m-auto translate-y-[27px] sm:translate-y-[55px]">
                         <img className="w-full h-auto" src={SalesBanner} alt="sales Management Banner" loading="lazy" width={797} height={400} />
-                        <video className="absolute top-[3%] left-[9%] w-[83%] h-[90%] object-cover rounded-lg" src={ProductVideo} loop muted autoPlay playsinline />
+                        <video className="absolute top-[3%] left-[9%] w-[83%] h-[90%] object-cover rounded-lg" src={ProductVideo} loop muted autoPlay playsInline />
                     </div>
                 </div>
             </section>
