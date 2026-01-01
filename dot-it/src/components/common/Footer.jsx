@@ -81,7 +81,7 @@ export default function Footer() {
                             <img src={FooterLogo} alt="logo" width={102} height={36} />
                             <p className='text-base '>dot your i's and cross your t's</p>
                             <p className='text-start max-w-[200px]'> dot.it Technologies, Inc. Craig Ranch, McKinney, TX</p>
-                            <a className='mt-2' href="https://www.linkdeln.com" target='blank'>
+                            <a className='mt-2' href="https://www.linkdeln.com" target='blank' aria-label='linkdeln link'>
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#E6EFFA" />
                                     <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#B0CEEE" />

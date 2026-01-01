@@ -145,6 +145,7 @@ const Header = () => {
                         <button
                             className="md:hidden p-2"
                             onClick={() => setMobileMenuOpen((p) => !p)}
+                            aria-label="humberger"
                         >
                             <svg
                                 className="w-6 h-6 text-[#002B5A]"
