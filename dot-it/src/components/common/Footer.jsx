@@ -112,7 +112,7 @@ export default function Footer() {
                         ))}
 
                     </div>
-                    <p className='mt-8 mb-2.5 text-base/6 text-[#A3A3A3] -tracking-[0.32px] text-start'>dot.it | ©2025</p>
+                    <p className='mt-8 mb-2.5 text-base/6 -tracking-[0.32px] text-start'>dot.it | ©2025</p>
                 </div>
             </footer >
         </>

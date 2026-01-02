@@ -117,7 +117,7 @@ export default function ProductPage() {
                             </div>
                         </div>
                         <div>
-                            <img src={productHero} alt="thumbnail" width={441} height={432} />
+                            <img src={productHero} alt="thumbnail" width={441} height={432} loading="eager" />
                         </div>
                     </div>
 

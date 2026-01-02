@@ -39,7 +39,7 @@ const BlogsPage = ({ activeCategory = "All", searchTerm = "", limit = "6" }) => 
     return (
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {visibleCaseStudies.map((card) => (
-                <Link key={card.id} to={`/blogs/${card.slug}`}>
+                <Link key={card.id} to={`/blogs/${card.slug}`} aria-label="blog card">
                     <div className="h-100 group p-3 rounded-xl border border-[#EDEDED] transition-all duration-400 hover:shadow-[0_0_4px_6px_#EAF4FF] hover:border-[#0160C9] flex flex-col items-start justify-between gap-4">
                         <div className="w-full overflow-hidden rounded-lg">
                             <img className=" object-cover w-full h-auto group-hover:scale-105 transition-all duration-400" src={card.thumbnail} alt={card.slug} width={385} height={240} loading="lazy" />

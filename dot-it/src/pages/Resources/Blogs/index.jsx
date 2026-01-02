@@ -63,7 +63,7 @@ export default function Blogspage() {
                         <Searchbar placeholder="Search for news or articles" />
                     </div>
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-[minmax(100px,592px)_minmax(100px,664px)] gap-6">
-                        <Link className="w-full" to="">
+                        <Link className="w-full" to="" aria-label="blog card">
                             <div className="h-[460px] p-3 group rounded-xl border border-[#EDEDED] transition-all duration-400 hover:shadow-[0_0_3px_6px_#EAF4FF] hover:border-[#0160C9] flex flex-col items-center gap-4">
                                 <div className="w-full overflow-hidden rounded-lg">
                                     <img className="w-full h-auto object-cover group-hover:scale-105 transition-all duration-400 " src={Blogs} alt="" width={568} height={240} loading="lazy" />
@@ -93,7 +93,7 @@ export default function Blogspage() {
                             </div>
                         </Link>
                         <div className="flex flex-col items-center gap-6 h-[460px]">
-                            <Link className="w-full" to="">
+                            <Link className="w-full" to="" aria-label="blog card">
                                 <div className="group w-full p-3 rounded-xl border border-[#EDEDED] transition-all duration-400 hover:shadow-[0_0_3px_6px_#EAF4FF] hover:border-[#0160C9] grid grid-cols-[minmax(100px,204px)_minmax(100px,420px)] gap-4 items-center">
                                     <div className="overflow-hidden w-full rounded-lg">
                                         <img className="w-full  h-full object-cover group-hover:scale-105  transition-all duration-400" src={blog2} alt="" width={204} height={194} loading="lazy" />
@@ -122,7 +122,7 @@ export default function Blogspage() {
 
                                 </div>
                             </Link>
-                            <Link className="w-full" to="">
+                            <Link className="w-full" to="" aria-label="blog card">
                                 <div className="group w-full p-3 rounded-xl border border-[#EDEDED] transition-all duration-400 hover:shadow-[0_0_3px_6px_#EAF4FF] hover:border-[#0160C9] grid grid-cols-[minmax(100px,204px)_minmax(100px,420px)] gap-4 items-center">
                                     <div className="overflow-hidden w-full rounded-lg">
                                         <img className="w-full  h-full object-cover group-hover:scale-105  transition-all duration-400" src={blog2} alt="" width={204} height={194} loading="lazy" />

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @import "tailwindcss";
 
@@ -61,5 +60,22 @@ body {
 @media(max-width:575px) {
     .container {
         padding: 0 25px;
+    }
+}
+
+
+.tab-fade {
+    animation: tabFade 0.5s ease-in-out forwards;
+}
+
+@keyframes tabFade {
+    0% {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

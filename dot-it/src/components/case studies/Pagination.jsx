@@ -19,7 +19,7 @@ export default function Pagination({
                         : "hover:bg-white hover:text-black"
                     }
         `}
-            >
+                aria-label="prev btn">
                 ← Previous
             </button>
 
@@ -53,7 +53,7 @@ export default function Pagination({
                         : "hover:bg-white hover:text-black"
                     }
         `}
-            >
+                aria-label="next btn" >
                 Next →
             </button>
         </div>
