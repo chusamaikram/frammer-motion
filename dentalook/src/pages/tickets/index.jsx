@@ -129,7 +129,7 @@ export default function HomePage() {
 
             {(modelOpen || dataSubmit) &&
                 <>
-                    <div className="fixed inset-0 bg-black/40 z-5 flex items-center justify-center">
+                    <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center">
                         <div className="relative max-w-[682px] w-full max-h-[calc(100vh-50px)] overflow-y-auto bg-white shadow-xl rounded-lg transform transition-all duration-300 opacity-100 translate-y-0 scale-100">
                             {!dataSubmit &&
                                 <TicketForm
