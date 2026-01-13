@@ -31,9 +31,9 @@ export default function Sidebar() {
                     <li key={item.path} className="w-full">
                         <Link
                             to={item.path}
-                            className={`w-full p-[10px_10px_10px_14px] flex items-center gap-2.5 rounded-xl text-sm font-medium font-['Urbanist'] ${pathname === item.path
+                            className={`w-full p-[10px_10px_10px_14px] flex items-center gap-2.5 rounded-xl text-sm font-medium font-['Poppins']  ${pathname === item.path
                                 ? "bg-[#087BB3] text-white"
-                                : "bg-white text-[#63716E]"
+                                : "bg-white text-[#63716E] hover:bg-gray-300 hover:text-gray-900"
                                 }`}
                         >
                             <span className="h-full">

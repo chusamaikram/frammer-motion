@@ -22,6 +22,7 @@ const COLORS = [
 export default function LineChart({
     data = [], // API data: [{ name, values }]
     height = 300,
+    visibleSeries = {}, // Object tracking which series are visible
 }) {
     const chartRef = useRef(null);
 
@@ -49,33 +50,34 @@ export default function LineChart({
                     const month = params[0]?.axisValue;
 
                     let tooltipHtml = `
-            <div style="font-weight:600; margin-bottom:6px;">
-              ${month}
-            </div>
-          `;
+                <div style="font-weight:600; margin-bottom:6px;">
+                  ${month}
+                </div>
+              `;
 
                     params.forEach((item) => {
                         tooltipHtml += `
-              <div style="display:flex; align-items:center; margin:4px 0;">
-                <span
-                  style="
-                    display:inline-block;
-                    width:10px;
-                    height:10px;
-                    border-radius:50%;
-                    background:${item.color};
-                    margin-right:8px;
-                  "
-                ></span>
-                <span style="flex:1;">${item.seriesName}</span>
-                <span style="font-weight:600;">${item.data ?? 0}</span>
-              </div>
-            `;
+                  <div style="display:flex; align-items:center; margin:4px 0;">
+                    <span
+                      style="
+                        display:inline-block;
+                        width:10px;
+                        height:10px;
+                        border-radius:50%;
+                        background:${item.color};
+                        margin-right:8px;
+                      "
+                    ></span>
+                    <span style="flex:1;">${item.seriesName}</span>
+                    <span style="font-weight:600;">${item.data ?? 0}</span>
+                  </div>
+                `;
                     });
 
                     return tooltipHtml;
                 },
             },
+
 
             grid: {
                 left: "3%",
@@ -104,6 +106,7 @@ export default function LineChart({
 
             series: data.map((item, index) => {
                 const color = COLORS[index % COLORS.length];
+                const isVisible = visibleSeries[item.name] !== false; // Default to true if not specified
 
                 return {
                     name: item.name || `Series ${index + 1}`,
@@ -114,14 +117,22 @@ export default function LineChart({
                     symbolSize: 8,
                     lineStyle: {
                         width: 3,
-                        color,
+                        color: isVisible ? color : "transparent",
+                        opacity: isVisible ? 1 : 0,
                     },
                     itemStyle: {
-                        color,
+                        color: isVisible ? color : "transparent",
+                        opacity: isVisible ? 1 : 0,
                     },
                     emphasis: {
                         focus: "series",
                     },
+                    // Hide the series if not visible
+                    ...(isVisible ? {} : {
+                        lineStyle: { width: 0 },
+                        itemStyle: { opacity: 0 },
+                        showSymbol: false,
+                    }),
                 };
             }),
         };
@@ -133,7 +144,7 @@ export default function LineChart({
             window.removeEventListener("resize", chart.resize);
             chart.dispose();
         };
-    }, [data]);
+    }, [data, visibleSeries]);
 
     return (
         <div
@@ -142,3 +153,4 @@ export default function LineChart({
         />
     );
 }
+

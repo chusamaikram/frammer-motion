@@ -62,7 +62,7 @@ export default function SignupPage() {
                     <div className="w-full mt-3">
                         <Button type="submit" variant="primary" name="SIGN UP" />
                     </div>
-                    <p className=' mx-auto text-center text-sm leading-5 text-[#A0AEC0]'>Already have an account? <Link to="/login" className='text-[#087BB3]' >Login</Link> </p>
+                    <p className=' mx-auto text-center text-sm leading-5 text-[#A0AEC0]'>Already have an account? <Link to="/auth/login" className='text-[#087BB3]' >Login</Link> </p>
 
                 </form>
 

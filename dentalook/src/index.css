@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Roboto', 'Urbanist', sans-serif;
+  font-family: 'Roboto', 'Urbanist', 'Poppins' sans-serif;
 }
 
 @theme inline {
@@ -125,6 +125,7 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

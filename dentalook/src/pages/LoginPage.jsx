@@ -49,7 +49,7 @@ const LoginPage = () => {
 
                         </div>
                     </form>
-                    <p className='mt-5.5 text-center text-sm leading-5 text-[#A0AEC0]'>Don't have an account? <Link to="/signup" className='text-[#087BB3]' >Sign up</Link> </p>
+                    <p className='mt-5.5 text-center text-sm leading-5 text-[#A0AEC0]'>Don't have an account? <Link to="/auth/signup" className='text-[#087BB3]' >Sign up</Link> </p>
                 </div>
                 <div className='relative rounded-[0_0_0_25px]'>
                     <img className=' object-cover h-auto'

@@ -59,7 +59,7 @@ export default function Header() {
                                     <h3 className="text-sm/5 font-medium text-[#101828]">Muhammad Tayyem</h3>
                                     <span className="block -mt-0.5 text-xs/4 text-[#6a7282] ">Admin</span>
                                 </div>
-                                <Link to="/" className="mt-2 text-sm/5 text-red-500 cursor-default flex items-center">
+                                <Link to="/auth/login" className="mt-2 text-sm/5 text-red-500 cursor-default flex items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out w-4 h-4 mr-2" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9">
                                     </path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     </svg>

@@ -9,7 +9,9 @@ export default function Landinglayout() {
             <main>
                 <div className="relative flex items-start justify-between">
                     <Sidebar />
-                    <Outlet />
+                    <div className="flex-1 flex flex-col overflow-hidden transition-all duration-300 ">
+                        <Outlet />
+                    </div>
                 </div>
             </main>
         </>

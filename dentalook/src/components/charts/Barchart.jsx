@@ -1,59 +1,90 @@
 import React from "react";
 import ReactECharts from "echarts-for-react";
 
-const BarChart = ({ data = [], height, ShowAllLabels = false, barwidth = "80%" }) => {
+const BarChart = ({
+  data = [],
+  height,
+  ShowAllLabels = false,
+  barwidth = "80%",
+  visibleSeries = null // Optional: pass visibility object to enable legend control
+}) => {
 
   const barNames = data.map(item => item.name);
   const barValues = data.map(item => item.value);
   const barColors = data.map(item => item.color);
 
+  // Filter data based on visibility if visibleSeries is provided
+  const getFilteredData = () => {
+    if (!visibleSeries) {
+      // If no visibleSeries prop, show all data
+      return {
+        names: barNames,
+        values: barValues,
+        colors: barColors
+      };
+    }
+
+    // Filter based on visibility
+    const filtered = data.filter(item => visibleSeries[item.name] !== false);
+    return {
+      names: filtered.map(item => item.name),
+      values: filtered.map(item => item.value),
+      colors: filtered.map(item => item.color)
+    };
+  };
+
+  const { names, values, colors } = getFilteredData();
+
   const option = {
+    grid: {
+      left: "3%",
+      right: "3%",
+      bottom: "0",
+    },
     tooltip: {
-      trigger: "axis",       // show tooltip on hover
+      trigger: "axis",
       axisPointer: {
-        type: "shadow"       // shadow highlights the bar
+        type: "shadow"
       }
     },
     xAxis: {
       type: "category",
-      data: barNames,
+      data: names,
       axisLine: {
-        show: false   // 👈 removes x-axis baseline
+        show: false
       },
       axisLabel: {
         formatter: (value, index) => {
           if (ShowAllLabels) {
-            return value; // All Tickets, Resolved Tickets
+            return value;
           }
 
-          // condensed mode → alternate + first word
+          // show only first word
           if (index % 2 !== 0) return "";
           return value.split(" ")[0];
         }
-      }
+      },
     },
     yAxis: {
       type: "value",
       splitLine: {
-        show: false   // 👈 removes horizontal lines
+        show: false
       }
     },
     series: [
       {
         type: "bar",
-        data: barValues.map((value, index) => ({
+        data: values.map((value, index) => ({
           value,
-          itemStyle: { color: barColors[index] } // assign color from donut
+          itemStyle: { color: colors[index] }
         })),
-        barWidth: { barwidth },
+        barWidth: barwidth,
         emphasis: {
           label: {
-            show: false   // 👈 disables hover value
+            show: false
           }
         }
       },
-
-
     ]
   };
 
