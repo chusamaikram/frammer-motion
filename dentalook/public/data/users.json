@@ -1,0 +1,224 @@
+{
+    "employees": [
+        {
+            "employeeId": "EMP-0234",
+            "name": "Olivia Mason",
+            "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
+            "role": "Regional Manager",
+            "region": "AB-North",
+            "clinic": "67th Street Dental",
+            "logins": 31,
+            "ticketsSubmitted": 4,
+            "lastLogin": "27 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0235",
+            "name": "Mahmood Tayyem",
+            "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
+            "role": "UX/UI Lead",
+            "region": "CA-West",
+            "clinic": "My Dental Home",
+            "logins": 41,
+            "ticketsSubmitted": 3,
+            "lastLogin": "27 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0236",
+            "name": "Maria Norton",
+            "avatar": "https://randomuser.me/api/portraits/women/65.jpg",
+            "role": "Regional Manager",
+            "region": "AB-North",
+            "clinic": "67th Street Dental",
+            "logins": 33,
+            "ticketsSubmitted": 4,
+            "lastLogin": "26 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0237",
+            "name": "Laura Nelson",
+            "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
+            "role": "Regional Manager",
+            "region": "AB-North",
+            "clinic": "67th Street Dental",
+            "logins": 38,
+            "ticketsSubmitted": 2,
+            "lastLogin": "26 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0238",
+            "name": "John Doe",
+            "avatar": "https://randomuser.me/api/portraits/men/45.jpg",
+            "role": "Regional Manager",
+            "region": "AB-North",
+            "clinic": "67th Street Dental",
+            "logins": 35,
+            "ticketsSubmitted": 4,
+            "lastLogin": "25 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0239",
+            "name": "Navendu Oray",
+            "avatar": "https://randomuser.me/api/portraits/men/52.jpg",
+            "role": "Regional Manager",
+            "region": "AB-North",
+            "clinic": "67th Street Dental",
+            "logins": 28,
+            "ticketsSubmitted": 3,
+            "lastLogin": "25 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0240",
+            "name": "Sarah Collins",
+            "avatar": "https://randomuser.me/api/portraits/women/21.jpg",
+            "role": "Support Lead",
+            "region": "TX-East",
+            "clinic": "Bright Smile Clinic",
+            "logins": 42,
+            "ticketsSubmitted": 6,
+            "lastLogin": "24 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0241",
+            "name": "Daniel Brooks",
+            "avatar": "https://randomuser.me/api/portraits/men/19.jpg",
+            "role": "Operations Manager",
+            "region": "NY-South",
+            "clinic": "Pearl Dental",
+            "logins": 29,
+            "ticketsSubmitted": 2,
+            "lastLogin": "24 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0242",
+            "name": "Ayesha Khan",
+            "avatar": "https://randomuser.me/api/portraits/women/48.jpg",
+            "role": "Clinic Supervisor",
+            "region": "PK-Central",
+            "clinic": "Smile Care",
+            "logins": 36,
+            "ticketsSubmitted": 5,
+            "lastLogin": "23 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0243",
+            "name": "Robert Miles",
+            "avatar": "https://randomuser.me/api/portraits/men/61.jpg",
+            "role": "IT Manager",
+            "region": "CA-North",
+            "clinic": "Urban Dental",
+            "logins": 47,
+            "ticketsSubmitted": 7,
+            "lastLogin": "23 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0244",
+            "name": "Emily Watson",
+            "avatar": "https://randomuser.me/api/portraits/women/77.jpg",
+            "role": "HR Manager",
+            "region": "FL-East",
+            "clinic": "Ocean Dental",
+            "logins": 22,
+            "ticketsSubmitted": 1,
+            "lastLogin": "22 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0245",
+            "name": "Hassan Raza",
+            "avatar": "https://randomuser.me/api/portraits/men/75.jpg",
+            "role": "QA Engineer",
+            "region": "PK-North",
+            "clinic": "Dental Hub",
+            "logins": 39,
+            "ticketsSubmitted": 4,
+            "lastLogin": "22 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0246",
+            "name": "Sophia Turner",
+            "avatar": "https://randomuser.me/api/portraits/women/34.jpg",
+            "role": "Product Owner",
+            "region": "UK-West",
+            "clinic": "Care Dental",
+            "logins": 44,
+            "ticketsSubmitted": 6,
+            "lastLogin": "21 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0247",
+            "name": "James Carter",
+            "avatar": "https://randomuser.me/api/portraits/men/88.jpg",
+            "role": "Backend Engineer",
+            "region": "TX-West",
+            "clinic": "Prime Dental",
+            "logins": 31,
+            "ticketsSubmitted": 3,
+            "lastLogin": "21 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0248",
+            "name": "Nadia Ali",
+            "avatar": "https://randomuser.me/api/portraits/women/56.jpg",
+            "role": "Frontend Developer",
+            "region": "PK-East",
+            "clinic": "Smile Studio",
+            "logins": 37,
+            "ticketsSubmitted": 4,
+            "lastLogin": "20 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0249",
+            "name": "Michael Scott",
+            "avatar": "https://randomuser.me/api/portraits/men/41.jpg",
+            "role": "Branch Manager",
+            "region": "PA-North",
+            "clinic": "Care Plus Dental",
+            "logins": 26,
+            "ticketsSubmitted": 2,
+            "lastLogin": "20 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0250",
+            "name": "Zara Sheikh",
+            "avatar": "https://randomuser.me/api/portraits/women/83.jpg",
+            "role": "Data Analyst",
+            "region": "PK-South",
+            "clinic": "Elite Dental",
+            "logins": 45,
+            "ticketsSubmitted": 6,
+            "lastLogin": "19 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0251",
+            "name": "Kevin Brown",
+            "avatar": "https://randomuser.me/api/portraits/men/14.jpg",
+            "role": "Security Lead",
+            "region": "NV-West",
+            "clinic": "Shield Dental",
+            "logins": 34,
+            "ticketsSubmitted": 3,
+            "lastLogin": "19 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0252",
+            "name": "Amelia Rose",
+            "avatar": "https://randomuser.me/api/portraits/women/91.jpg",
+            "role": "Marketing Manager",
+            "region": "LA-East",
+            "clinic": "Smile Bright",
+            "logins": 40,
+            "ticketsSubmitted": 5,
+            "lastLogin": "18 Oct 2025"
+        },
+        {
+            "employeeId": "EMP-0253",
+            "name": "Bilal Ahmed",
+            "avatar": "https://randomuser.me/api/portraits/men/66.jpg",
+            "role": "System Admin",
+            "region": "PK-West",
+            "clinic": "Dental Point",
+            "logins": 48,
+            "ticketsSubmitted": 7,
+            "lastLogin": "18 Oct 2025"
+        }
+    ]
+}

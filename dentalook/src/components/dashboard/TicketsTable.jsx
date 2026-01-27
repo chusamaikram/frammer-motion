@@ -337,7 +337,7 @@ const TicketsTable = (props) => {
 
 
     return (
-        <div className={` bg-white border border-[#E5E7EE] rounded-md shadow-[0_0_9px_0_rgba(100,100,117,0.05)] w-full overflow-x-auto  `}>
+        <div className={` bg-white border border-[#E5E7EE] rounded-md shadow-[0_0_9px_0_rgba(100,100,117,0.05)] w-full `}>
             <div onClick={() => SetOpenTable(!openTable)} className='px-7 py-4 w-full cursor-pointer flex items-center gap-4 hover:bg-gray-50'>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"

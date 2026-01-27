@@ -1,0 +1,252 @@
+{
+    "operationsView": {
+        "provinceView": [
+            {
+                "provinceCode": "SK",
+                "provinceName": "Saskatchewan",
+                "tickets": {
+                    "total": 3,
+                    "received": 0,
+                    "assigned": 1,
+                    "stuck": 0,
+                    "completed": 2
+                },
+                "resolutionTimeDays": "N/A"
+            },
+            {
+                "provinceCode": "ON",
+                "provinceName": "Ontario",
+                "tickets": {
+                    "total": 7,
+                    "received": 3,
+                    "assigned": 1,
+                    "stuck": 0,
+                    "completed": 3
+                },
+                "resolutionTimeDays": "N/A"
+            },
+            {
+                "provinceCode": "AB",
+                "provinceName": "Alberta",
+                "tickets": {
+                    "total": 54,
+                    "received": 3,
+                    "assigned": 31,
+                    "stuck": 3,
+                    "completed": 17
+                },
+                "resolutionTimeDays": "N/A"
+            }
+        ],
+        "regionalManagersOverview": [
+            {
+                "id": "rm-001",
+                "managerName": "Asha Brijalli",
+                "region": "Saskatchewan",
+                "tickets": {
+                    "total": 7,
+                    "received": 3,
+                    "assigned": 1,
+                    "stuck": 0,
+                    "completed": 3
+                },
+                "resolutionTimeDays": 12
+            },
+            {
+                "id": "rm-002",
+                "managerName": "Mandi Hillegards",
+                "region": "Alberta",
+                "tickets": {
+                    "total": 54,
+                    "received": 3,
+                    "assigned": 31,
+                    "stuck": 3,
+                    "completed": 17
+                },
+                "resolutionTimeDays": "N/A"
+            },
+            {
+                "id": "rm-003",
+                "managerName": "Cheryl Olberg",
+                "region": "Ontario",
+                "tickets": {
+                    "total": 2,
+                    "received": 0,
+                    "assigned": 1,
+                    "stuck": 0,
+                    "completed": 1
+                },
+                "resolutionTimeDays": "N/A"
+            },
+            {
+                "id": "rm-004",
+                "managerName": "Jamie Plasko",
+                "region": "Ontario",
+                "tickets": {
+                    "total": 1,
+                    "received": 0,
+                    "assigned": 0,
+                    "stuck": 0,
+                    "completed": 1
+                },
+                "resolutionTimeDays": "N/A"
+            }
+        ],
+        "clinicsOverview": [
+            {
+                "clinicId": "4e46db87",
+                "clinicName": "87th Street Dental",
+                "province": "AB",
+                "tickets": {
+                    "total": 54,
+                    "received": 3,
+                    "assigned": 31,
+                    "stuck": 3,
+                    "completed": 17
+                },
+                "resolutionTimeDays": 2
+            },
+            {
+                "clinicId": "72df32fe",
+                "clinicName": "Riverbend Dental Centre",
+                "province": "AB",
+                "tickets": {
+                    "total": 1,
+                    "received": 0,
+                    "assigned": 1,
+                    "stuck": 0,
+                    "completed": 0
+                },
+                "resolutionTimeDays": 5
+            },
+            {
+                "clinicId": "94f68a46",
+                "clinicName": "Fairview Smiles Dentistry",
+                "province": "AB",
+                "tickets": {
+                    "total": 1,
+                    "received": 0,
+                    "assigned": 1,
+                    "stuck": 0,
+                    "completed": 0
+                },
+                "resolutionTimeDays": 1
+            },
+            {
+                "clinicId": "4ac04734",
+                "clinicName": "Parkland Dental Centre",
+                "province": "AB",
+                "tickets": {
+                    "total": 1,
+                    "received": 0,
+                    "assigned": 0,
+                    "stuck": 0,
+                    "completed": 1
+                },
+                "resolutionTimeDays": 9
+            },
+            {
+                "clinicId": "0d12eb26",
+                "clinicName": "Territorial Dental",
+                "province": "SK",
+                "tickets": {
+                    "total": 1,
+                    "received": 0,
+                    "assigned": 0,
+                    "stuck": 0,
+                    "completed": 1
+                },
+                "resolutionTimeDays": 4
+            },
+            {
+                "clinicId": "b286f146",
+                "clinicName": "My Dental Home",
+                "province": "SK",
+                "tickets": {
+                    "total": 4,
+                    "received": 2,
+                    "assigned": 0,
+                    "stuck": 0,
+                    "completed": 2
+                },
+                "resolutionTimeDays": 7
+            },
+            {
+                "clinicId": "15af97fa",
+                "clinicName": "Lawrence Avenue Dental",
+                "province": "ON",
+                "tickets": {
+                    "total": 2,
+                    "received": 1,
+                    "assigned": 0,
+                    "stuck": 0,
+                    "completed": 1
+                },
+                "resolutionTimeDays": 3
+            }
+        ],
+        "DepartmentView": [
+            {
+                "agentId": "ag-001",
+                "agentName": "Laith Wajaja",
+                "agentImage": "https://www.loremfaces.net/128/id/1.jpg",
+                "department": "IT Support",
+                "tickets": {
+                    "total": 12,
+                    "received": 8,
+                    "assigned": 6,
+                    "stuck": 6,
+                    "completed": 6
+                },
+                "resolutionTimeDays": 3.0
+            },
+            {
+                "agentId": "ag-002",
+                "agentName": "Fanny Reid",
+                "agentImage": "https://www.loremfaces.net/128/id/2.jpg",
+                "department": "Procurement",
+                "tickets": {
+                    "total": 12,
+                    "received": 8,
+                    "assigned": 6,
+                    "stuck": 6,
+                    "completed": 6
+                },
+                "resolutionTimeDays": 3.0
+            },
+            {
+                "agentId": "ag-003",
+                "agentName": "Clara Moretti",
+                "agentImage": "https://www.loremfaces.net/128/id/3.jpg",
+                "department": "Payroll",
+                "tickets": {
+                    "total": 12,
+                    "received": 8,
+                    "assigned": 6,
+                    "stuck": 6,
+                    "completed": 6
+                },
+                "resolutionTimeDays": 3.0
+            },
+            {
+                "agentId": "ag-004",
+                "agentName": "Arthin Mustafa",
+                "agentImage": "https://www.loremfaces.net/128/id/4.jpg",
+                "department": "HR",
+                "tickets": {
+                    "total": 12,
+                    "received": 8,
+                    "assigned": 6,
+                    "stuck": 6,
+                    "completed": 6
+                },
+                "resolutionTimeDays": 3.0
+            }
+        ]
+    },
+    "meta": {
+        "generatedAt": "2026-01-23T11:45:00Z",
+        "timezone": "America/Toronto",
+        "status": "success"
+    }
+}

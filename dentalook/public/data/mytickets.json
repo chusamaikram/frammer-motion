@@ -1,0 +1,88 @@
+{
+    "mytickets": [
+        {
+            "ticketName": "Project X dashboard UI prototype",
+            "dateAdded": "Fri Aug 15",
+            "department": "IT",
+            "status": "Received",
+            "daysOpen": "12 Days"
+        },
+        {
+            "ticketName": "Login issue on admin panel",
+            "dateAdded": "Mon Aug 18",
+            "department": "Operations",
+            "status": "Assigned",
+            "daysOpen": "8 Days"
+        },
+        {
+            "ticketName": "Payment gateway timeout",
+            "dateAdded": "Wed Aug 20",
+            "department": "Finance",
+            "status": "Stuck",
+            "daysOpen": "5 Days"
+        },
+        {
+            "ticketName": "Employee access request",
+            "dateAdded": "Thu Aug 21",
+            "department": "HR",
+            "status": "Completed",
+            "daysOpen": "2 Days"
+        },
+        {
+            "ticketName": "Clinic report export bug",
+            "dateAdded": "Fri Aug 22",
+            "department": "IT",
+            "status": "Assigned",
+            "daysOpen": "6 Days"
+        },
+        {
+            "ticketName": "Email notifications not sent",
+            "dateAdded": "Sat Aug 23",
+            "department": "Support",
+            "status": "Received",
+            "daysOpen": "1 Day"
+        },
+        {
+            "ticketName": "Project X dashboard UI prototype",
+            "dateAdded": "Fri Aug 15",
+            "department": "IT",
+            "status": "Received",
+            "daysOpen": "12 Days"
+        },
+        {
+            "ticketName": "Login issue on admin panel",
+            "dateAdded": "Mon Aug 18",
+            "department": "Operations",
+            "status": "Assigned",
+            "daysOpen": "8 Days"
+        },
+        {
+            "ticketName": "Payment gateway timeout",
+            "dateAdded": "Wed Aug 20",
+            "department": "Finance",
+            "status": "Stuck",
+            "daysOpen": "5 Days"
+        },
+        {
+            "ticketName": "Employee access request",
+            "dateAdded": "Thu Aug 21",
+            "department": "HR",
+            "status": "Completed",
+            "daysOpen": "2 Days"
+        },
+        {
+            "ticketName": "Clinic report export bug",
+            "dateAdded": "Fri Aug 22",
+            "department": "IT",
+            "status": "Assigned",
+            "daysOpen": "6 Days"
+        },
+        {
+            "ticketName": "Email notifications not sent",
+            "dateAdded": "Sat Aug 23",
+            "department": "Support",
+            "status": "Received",
+            "daysOpen": "1 Day"
+        }
+    ]
+}

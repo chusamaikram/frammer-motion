@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TicketModel from "./TicketModel";
+import TablePagination from "../Tablepagination";
 
 // Reusable table component
 export default function Table({ data, status }) {
@@ -14,6 +15,11 @@ export default function Table({ data, status }) {
     department: "",
     clinic: "",
   })
+  /* pagination */
+  const [currentPage, setCurrentPage] = useState(1)
+  const [rowsPerPage, setRowsPerPage] = useState(5)
+
+
 
   const toggleMenu = (idx) => {
     setMenuOpen((prev) => ({
@@ -32,11 +38,20 @@ export default function Table({ data, status }) {
 
     setModelOpen(true);
   };
+  /*pagination controller */
+
+  const totalItems = data.length
+  const totalPages = Math.ceil(totalItems / rowsPerPage)
+
+  const startIndex = (currentPage - 1) * rowsPerPage
+  const endIndex = startIndex + rowsPerPage
+  const currentData = data.slice(startIndex, endIndex)
+
 
   return (
     <>
-      <div className="w-full overflow-x-auto  bg-white ">
-        <table className="min-w-max">
+      <div className="w-full bg-white overflow-x-auto ">
+        <table className="min-w-max  ">
           <thead className="bg-[#F7F7F7]">
             <tr className="">
               <th className="px-7 py-3 text-left text-xs font-semibold uppercase tracking-wide text-gray-500">Ticket Name</th>
@@ -51,7 +66,7 @@ export default function Table({ data, status }) {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
-            {data.map((row, idx) => (
+            {currentData.map((row, idx) => (
               <tr
                 onClick={() => handleRowClick(row)}
                 key={idx}
@@ -132,7 +147,17 @@ export default function Table({ data, status }) {
             ))}
           </tbody>
         </table>
+
       </div >
+      <div className="px-8">
+        <TablePagination
+          currentPage={currentPage}
+          totalItems={totalItems}
+          rowsPerPage={rowsPerPage}
+          onPageChange={setCurrentPage}
+          onRowsPerPageChange={setRowsPerPage}
+        />
+      </div>
       {modelOpen &&
         < div className="fixed inset-0 bg-black/60 z-80 ">
           <div className="mx-auto my-4 max-w-6xl w-full bg-white h-[calc(100vh-30px)] relative  rounded-lg shadow-lg ">

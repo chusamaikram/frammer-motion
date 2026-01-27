@@ -2,15 +2,18 @@ import { Link } from "react-router"
 import logo from "/logo.svg"
 import avatar from "/avatar.svg"
 import { useState } from "react";
+import { NavLinks } from "./Sidebar";
 export default function Header() {
 
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [profileOpen, setProfileOpen] = useState(false);
     const [notifications, setNotifications] = useState(false);
+
+    const [menuOpen, setMenuOpen] = useState(false)
     return (
         <>
             <header className="p-5 sticky inset-0 bg-white z-30 ">
                 <div className="flex items-center justify-between ">
-                    <div className="flex items-center gap-26 px-2.5 ">
+                    <div className="flex items-center gap-5 md:gap-20 px-2.5 ">
                         <div className="max-w-35 w-full">
                             <Link to="/" >
                                 <img className="w-full object-cover" src={logo} alt="logo" width={140} height={30} />
@@ -47,7 +50,7 @@ export default function Header() {
                             {/* notification Bar */}
                             {notifications &&
 
-                                <div className={`absolute top-full right-0 mt-1 sm:w-80 rounded-md border border-gray-200 bg-white p-1 overflow-hidden`}>
+                                <div className={`absolute top-full right-0 mt-1 w-80 rounded-md border border-gray-200 bg-white p-1 overflow-hidden`}>
                                     <div className="px-4 py-3 bg-gray-50 w-full">
                                         <h3 className="text-base/6 font-semibold text-[#101828]">Notifications</h3>
                                     </div>
@@ -100,8 +103,65 @@ export default function Header() {
                             }
 
                         </div>
-                        <span className="inline-block w-[1px] h-9 bg-[#F9FBFC]"></span>
-                        <div className="relative cursor-pointer flex items-center gap-3" onClick={() => setMenuOpen(!menuOpen)}>
+                        {/* Humburger Button */}
+                        <button className="block md:hidden cursor-pointer"
+                            onClick={() => setMenuOpen(!menuOpen)}
+                        >
+                            <span>
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                    <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+
+                            </span>
+
+                        </button>
+                            <div
+                                className={` fixed right-0 top-22 w-64 bg-white p-4
+                                             transform transition-all duration-300 ease-in-out
+                                            ${menuOpen ? "translate-x-0 opacity-100"
+                                        : "translate-x-full opacity-0 pointer-events-none"}
+                                         `} >
+                                <div className=" relative cursor-pointer flex flex-col items-center justify-start gap-3" onClick={() => setProfileOpen(!profileOpen)}>
+                                    <div className="relative w-12.5 h-12.5">
+                                        <img className="w-full object-cover " src={avatar} alt="avatar" />
+                                        <span className="absolute bottom-0 right-0 inline-block w-3 h-3 rounded-full bg-[#1AD598] border-2 border-white"></span>
+                                    </div>
+                                    <div className="flex flex-col items-start">
+                                        <h2 className="text-lg font-semibold leading-6 font-['Urbanist'] text-[#17181A]">Mahmoud Tayyem</h2>
+                                        <span className="text-base font-semibold leading-4.5 text-[#809FB8]">Admin</span>
+                                    </div>
+
+
+                                    {/* Profile Explorer */}
+                                    <div className={`absolute top-full z-10 right-3 max-w-[192px] w-full rounded-md bg-white p-4 mt-1.5 flex flex-col items-start gap-1 shadow-lg cursor-default border border-gray-200  ${profileOpen ? 'block animate-out' : 'hidden animate-in'}`}>
+                                        <div className="pb-1">
+                                            <h3 className="text-sm/5 font-medium text-[#101828]">Muhammad Tayyem</h3>
+                                            <span className="block -mt-0.5 text-xs/4 text-[#6a7282] ">Admin</span>
+                                        </div>
+                                        <Link to="/auth/login" className="mt-2 text-sm/5 text-red-500 cursor-default flex items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out w-4 h-4 mr-2" aria-hidden="true"><path d="m16 17 5-5-5-5"></path><path d="M21 12H9">
+                                            </path><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                            </svg>
+                                            Sign Out
+                                        </Link>
+
+                                    </div>
+                                </div>
+                                <div className="mt-4">
+                                    <NavLinks setMenuOpen={setMenuOpen} />
+
+                                </div>
+                            </div>
+                        <span className="hidden md:inline-block w-[1px] h-9 bg-[#F9FBFC]"></span>
+                        <div className="hidden relative cursor-pointer md:flex items-center gap-3" onClick={() => setProfileOpen(!profileOpen)}>
                             <div className="relative w-12.5 h-12.5">
                                 <img className="w-full object-cover " src={avatar} alt="avatar" />
                                 <span className="absolute bottom-0 right-0 inline-block w-3 h-3 rounded-full bg-[#1AD598] border-2 border-white"></span>
@@ -117,7 +177,7 @@ export default function Header() {
                             </span>
 
                             {/* Profile Explorer */}
-                            <div className={`absolute top-full z-10 right-3 max-w-[192px] w-full rounded-md bg-white p-4 mt-1.5 flex flex-col items-start gap-1 shadow-lg cursor-default border border-gray-200  ${menuOpen ? 'block animate-out' : 'hidden animate-in'}`}>
+                            <div className={`absolute top-full z-10 right-3 max-w-[192px] w-full rounded-md bg-white p-4 mt-1.5 flex flex-col items-start gap-1 shadow-lg cursor-default border border-gray-200  ${profileOpen ? 'block animate-out' : 'hidden animate-in'}`}>
                                 <div className="pb-1">
                                     <h3 className="text-sm/5 font-medium text-[#101828]">Muhammad Tayyem</h3>
                                     <span className="block -mt-0.5 text-xs/4 text-[#6a7282] ">Admin</span>

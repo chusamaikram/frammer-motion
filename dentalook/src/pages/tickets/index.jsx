@@ -105,12 +105,12 @@ export default function HomePage() {
    
     return (
         <>
-            <div className="w-full p-8 flex flex-col items-start gap-4 bg-[#F9FBFC]">
+            <div className="w-full flex flex-col items-start gap-4">
                 <div className="w-full bg-white rounded-2xl border border-[#E2E8F0] p-8 flex flex-col items-start">
                     <h1 className="text-black text-2xl font-bold leading-8">Tickets Panel</h1>
                     <p className="text-sm leading-5 text-[#757575]">Submit a ticket from one of the following categories</p>
                 </div>
-                <div className="w-full bg-white rounded-[10px] border border-[#E2E8F0] py-12 px-8 grid grid-cols-3 gap-x-2 gap-y-8">
+                <div className="w-full bg-white rounded-[10px] border border-[#E2E8F0] py-12 px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8">
                     {TicketsBtn.map((btn, index) => (
                         <button key={index} className=" p-4 rounded-lg border border-[#E2E8F0] hover:border-[#087BB3] flex flex-col items-center justify-center gap-1 font-['Urbanist']" onClick={() => {
                             setFormHeading(btn.name);

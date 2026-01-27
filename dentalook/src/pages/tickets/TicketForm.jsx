@@ -10,16 +10,16 @@ export default function TicketForm({ formHeadeing, formData, setFormData, handle
     const inactiveStyle = "bg-[rgba(208,213,221,0.25)] text-[#373940] border-[#D0D5DD]";
     return (
         <form onSubmit={(e) => handleSubmit(e)}>
-            <div className="px-8 py-4 border-b border-gray-200 flex items-center justify-between">
+            <div className="px-4 sm:px-8 py-2 sm:py-4 border-b border-gray-200 flex items-center justify-between">
                 <h2 className="text-lg/7 font-semibold text-[#101828] capitalize">{formHeadeing}</h2>
                 <button className="text-gray-500 hover:text-gray-700 text-2xl font-bold" onClick={() => setModelOpen(false)}>x</button>
             </div>
 
-            <div className="p-8 flex flex-col items-start gap-8 w-full">
+            <div className="p-4 sm:p-8 flex flex-col items-start gap-8 w-full">
                 <div className="w-full">
                     <p className="text-[#373940] text-base font-medium leading-normal ">What would you like assistance with?</p>
                     <div className="mt-3">
-                        <div className=" flex items-center justify-between gap-3">
+                        <div className=" flex flex-col sm:flex-row items-center justify-between gap-3">
                             {["General", "Software", "Hardware"].map((item, index) => (
                                 <button key={index} type="button"
                                     onClick={() => {
@@ -40,7 +40,7 @@ export default function TicketForm({ formHeadeing, formData, setFormData, handle
                 <div className="w-full">
                     <p className="text-[#373940] text-base font-medium leading-normal ">Which device you have an issue with?</p>
                     <div className="mt-3 ">
-                        <div className=" grid grid-cols-3 items-center justify-between gap-3">
+                        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-3">
                             {["Imaging", "Computers", "Phones", "Xrays", "Printers", "Scanners"].map((item, index) => (
                                 <button key={index} type="button"
                                     onClick={() => {

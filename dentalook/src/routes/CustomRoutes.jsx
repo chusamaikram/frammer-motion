@@ -6,6 +6,9 @@ import AuthLayout from "../layouts/AuthLayout"
 import HomePage from "../pages/tickets"
 import Analytics from "../pages/analytics"
 import Dashboard from "../pages/dashboard"
+import Leaderboard from "../pages/leaderboard"
+import UserAudit from "../pages/user-audit"
+import Settings from "../pages/settings"
 
 
 
@@ -16,9 +19,9 @@ const CustomRoutes = () => {
                 <Route path="/" element={<Analytics />} />
                 <Route path="/tickets" element={<HomePage />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/leaderboard" element={<HomePage />} />
-                <Route path="/user-audit" element={<HomePage />} />
-                <Route path="/settings" element={<HomePage />} />
+                <Route path="/leaderboard" element={<Leaderboard />} />
+                <Route path="/user-audit" element={<UserAudit />} />
+                <Route path="/settings" element={<Settings />} />
 
             </Route>
 

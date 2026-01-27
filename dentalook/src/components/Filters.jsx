@@ -79,16 +79,16 @@ export default function FilterFields({ heading, desc, showInput = true }) {
 
     return (
         <>
-            <div className="w-full bg-white rounded-2xl border border-[#E2E8F0] p-8 flex items-start justify-between gap-4">
-                <div>
-                    <h1 className="text-black text-2xl font-bold leading-8">
+            <div className="w-full bg-white rounded-2xl border border-[#E2E8F0] p-8 flex flex-col md:flex-row items-start justify-between gap-4">
+                <div className="">
+                    <h1 className="text-black w-[170px] text-2xl font-bold leading-8">
                         {heading}
                     </h1>
                     <p className="text-sm leading-5 text-[#757575]">
                         {desc}
                     </p>
                 </div>
-                <div className="w-full grid grid-cols-2 sm:flex 2xl:flex-nowrap flex-wrap gap-2 sm:justify-end" ref={dropdownRef}>
+                <div className="w-full flex 2xl:flex-nowrap flex-wrap gap-2 justify-end" ref={dropdownRef}>
                     {FiltersData.map((filter) => (
                         <div key={filter.id} className="max-w-[110px] grow">
                             <div
@@ -169,7 +169,9 @@ export default function FilterFields({ heading, desc, showInput = true }) {
                             </div>
                         </form>
                     }
-                    <button className="text-xs/4 font-semibold text-[#087BB3] cursor-pointer ">Clear Filters</button>
+                    <button
+                        onClick={() => setSelected({})}
+                        className="text-xs/4 font-semibold text-[#087BB3] cursor-pointer ">Clear Filters</button>
                 </div>
             </div>
         </>

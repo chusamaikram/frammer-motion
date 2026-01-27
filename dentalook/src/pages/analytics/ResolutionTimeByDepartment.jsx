@@ -74,9 +74,9 @@ const ResolutionTimeByDepartment = () => {
 
     return (
         <div className="mt-8 w-full p-8  rounded-[10px] border border-[#E2E8F0] bg-white">
-            <div className="flex items-start justify-between">
+            <div className="flex flex-col md:flex-row items-start justify-between">
                 <h2 className="text-[#17181A] text-xl/8 font-bold max-w-[240px]">Average Resolution Time by Department</h2>
-                <div className="flex items-center flex-wrap max-w-[461px]">
+                <div className="my-3 md:my-0 flex items-center flex-wrap max-w-[461px]">
                     {Legends.map((legend, index) => (
                         <button
                             key={index}

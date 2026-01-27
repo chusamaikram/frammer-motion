@@ -84,7 +84,7 @@ export default function Analytics() {
     return (
         <>
 
-            <div className="w-full p-8 bg-[#F9FBFC]">
+            <div className="w-full  ">
                 <div>
                     <FilterFields
                         heading="Service Desk Analytics"
@@ -92,7 +92,7 @@ export default function Analytics() {
                     />
                 </div>
 
-                <div className="mt-8 grid grid-cols-3 gap-x-4 gap-y-8 items-start h-full w-full">
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-8 items-start h-full w-full">
                     {chartData.map((chart, index) => (
 
                         <div key={index} className="w-full h-107 bg-white p-8 rounded-2xl border border-[#E2E8F0] flex flex-col items-start">

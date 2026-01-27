@@ -72,7 +72,7 @@ export default function Dashboard() {
     return (
 
         <>
-            <div className="w-full p-8 bg-[#F9FBFC]">
+            <div className="w-full">
                 <Link to="/tickets" className="flex items-center justify-end mb-4">
                     <button className="cursor-pointer w-50 bg-[#34B3F1] p-[10px_10px_10px_14px] rounded-xl flex items-center gap-2.5 text-sm font-medium text-white">
                         <svg
@@ -94,13 +94,13 @@ export default function Dashboard() {
                     </button>
                 </Link>
                 <div className="flex flex-col items-start gap-4">
-                    <div>
+                    <div className="">
                         <FilterFields
                             heading="Service Desk Deshboard"
                             showInput={false}
                         />
                     </div>
-                    <div className="w-full grid grid-cols-5 gap-2">
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2">
                         {TicketCards.map((card, index) => (
                             <div key={index} className="w-full border border-[#E2E8F0] rounded-lg p-4 bg-white duration-200 shadow-sm flex flex-col items-start gap-3">
                                 <div className="flex items-center gap-2">
@@ -123,11 +123,11 @@ export default function Dashboard() {
                 </div>
 
                 <div className="mt-8 mb-4 px-4 py-2 bg-[#FDFDFD] border border-[#E2E8F0] rounded-md">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between overflow-x-auto ">
                         {Categories.map((cat) => (
                             <div key={cat.label}
                                 onClick={() => setViewTickets(cat.label)}
-                                className={`cursor-pointer px-3 py-2 flex items-center justify-center gap-4 w-full rounded-sm text-sm/5 font-medium ${viewTickets === cat.label ? "text-[#0F172A] shadow-[0_1px_3px_0_rgba(0,0,0,0.10),0_1px_2px_-1px_rgba(0,0,0,0.10)] bg-white " : "text-[#64748B] hover:text-[#0F172A]"} `}>
+                                className={`w-full cursor-pointer px-3 py-2 flex flex-col md:flex-row items-center justify-center gap-4 w-full rounded-sm text-sm/5 font-medium ${viewTickets === cat.label ? "text-[#0F172A] shadow-[0_1px_3px_0_rgba(0,0,0,0.10),0_1px_2px_-1px_rgba(0,0,0,0.10)] bg-white " : "text-[#64748B] hover:text-[#0F172A]"} `}>
                                 {cat.name}
                                 <div className={`w-6 h-6  rounded-full flex items-center justify-center text-xs font-medium ${cat.label === "all" ? "text-[#0F172A]" : "text-white "} ${cat.bgcolor} `}>{cat.value}</div>
                             </div>
